@@ -6,13 +6,13 @@ import random  # For generating sample data
 
 # Set page configuration
 st.set_page_config(
-    page_title="Erbil Urban Analysis Dashboard Created By JEGR PHY",
+    page_title="Erbil Urban Analysis Dashboard",
     page_icon="🏙️",
     layout="wide"
 )
 
 # Add title and description
-st.title("Erbil Urban Analysis Dashboard")
+st.title("Erbil Urban Analysis Dashboard Created By JEGR PHY")
 st.markdown("""
 This interactive dashboard visualizes various urban features in central Erbil.
 Use the sidebar controls to explore different layers and data.
