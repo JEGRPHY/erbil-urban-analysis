@@ -6,7 +6,7 @@ import random  # For generating sample data
 
 # Set page configuration
 st.set_page_config(
-    page_title="Erbil Urban Analysis Dashboard",
+    page_title="Erbil Urban Analysis Dashboard Created By JEGR PHY",
     page_icon="🏙️",
     layout="wide"
 )
