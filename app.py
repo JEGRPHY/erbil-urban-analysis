@@ -209,3 +209,33 @@ Data sources:
 - Base Map: OpenStreetMap
 - Sample data for demonstration
 """)
+
+import streamlit as st
+from streamlit_lottie import st_lottie
+import requests
+
+# Function to load a Lottie animation from a URL
+def load_lottie_url(url):
+    response = requests.get(url)
+    if response.status_code != 200:
+        return None
+    return response.json()
+
+# Load the Lottie animation (Example URL from LottieFiles)
+lottie_animation_url = "https://assets2.lottiefiles.com/packages/lf20_jcikwtux.json"
+lottie_animation = load_lottie_url(lottie_animation_url)
+
+# Streamlit app layout
+st.title("Streamlit Lottie Animation Example")
+st.write("This is a simple demo of using a Lottie animation in a Streamlit app.")
+
+# Display the Lottie animation
+st_lottie(
+    lottie_animation,
+    height=300,
+    width=300,
+    loop=True,
+)
+
+st.success("Lottie animation successfully loaded!")
+
